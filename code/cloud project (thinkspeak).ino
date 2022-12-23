@@ -15,11 +15,11 @@ float distanceInch;
 WiFiMulti WiFiMulti;
 const int trigPin = 5;
 const int echoPin = 18;
-const char* ssid     = "WiFi-FSM"; // Your SSID (Name of your WiFi)
-const char* password = "12457894"; //Your Wifi password
+const char* ssid     = ""; // Your SSID (Name of your WiFi)
+const char* password = ""; //Your Wifi password
 
 const char* host = "api.thingspeak.com";
-String api_key = "QVA82DHARMMLMFXF"; // Your API Key provied by thingspeak
+String api_key = ""; // Your API Key provied by thingspeak
 
 void setup(){
   Serial.begin(9600);
@@ -27,6 +27,7 @@ void setup(){
    pinMode(echoPin, INPUT);
    dht.begin();
    Connect_to_Wifi();
+   Serial.println("*****ZOUAOUI SAIFEDDINE******");
 }
 
 void loop(){
